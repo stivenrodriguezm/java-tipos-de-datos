@@ -34,6 +34,20 @@ public class Calculadora {
                 double division = (double) numero1 / numero2;
                 System.out.println("La división es " + division);
                 break;
+            case '%':
+                // Operación mod:
+                /* Es necesario que uno de los números que intervienen en la división sea double
+                para que el resultado decimal sea aproximado correctamente. **/
+                int mod = numero1 % numero2;
+                System.out.println("El mod es " + mod);
+                break;
+            case 'p':
+                // Operación mod:
+                /* Es necesario que uno de los números que intervienen en la división sea double
+                para que el resultado decimal sea aproximado correctamente. **/
+                int exponente = Math.pow((double)numero1, numero2);
+                System.out.println("El exponente es " + exponente);
+                break;
             default:
                 System.out.println("Operación inválida");
         }
