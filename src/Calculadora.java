@@ -6,7 +6,7 @@ public class Calculadora {
         // Lectura del valor de 2 variables enteras por consola:
         System.out.println("Ingrese el número 1");
         int numero1 = lector.nextInt();
-        double numeroUno = 0;
+        double numeroUno;
         System.out.println("Ingrese el número 2");
         int numero2 = lector.nextInt();
         System.out.println("Ingrese la operación (+, -, *, /, %, p)");
@@ -46,7 +46,7 @@ public class Calculadora {
                 // Operación mod:
                 /* Es necesario que uno de los números que intervienen en la división sea double
                 para que el resultado decimal sea aproximado correctamente. **/
-                numeroUno = (double) numero1;
+                numeroUno = numero1;
                 double exponente = Math.pow(numeroUno, numero2);
                 System.out.println("El exponente es " + exponente);
                 break;
